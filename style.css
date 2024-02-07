@@ -14,14 +14,20 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Adjust the width as needed */
 }
 
 .form-container input[type="text"] {
     padding: 10px;
-    margin: 10px;
+    margin: 10px 0; /* Ensure margin for top and bottom */
     border: 1px solid #ddd;
     border-radius: 5px;
-    width: calc(50% - 22px);
+    width: calc(100% - 22px); /* Adjust input width to fit container */
+}
+
+.button-container {
+    margin-top: 20px; /* Space above the button */
 }
 
 .form-container button {
@@ -32,6 +38,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    width: 100%; /* Make the button full width */
 }
 
 .form-container button:hover {
